@@ -1,0 +1,14 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "WikAwesome", articles_path, class: "navbar-brand" %>
+  <%= link_to "New Article", new_article_path, class: "navbar-brand"  %>
+</div>
+
+<div class="article-card">
+  <h1>
+    <%=@article.title%>
+    <%= link_to '<i class="fas fa-edit"></i>'.html_safe, edit_article_path%>
+
+  </h1>
+  <p> <%=@article.content%></p>
+</div>
+

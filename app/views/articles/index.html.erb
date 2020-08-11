@@ -1,0 +1,18 @@
+
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "WikAwesome", articles_path, class: "navbar-brand" %>
+  <%= link_to "New Article", new_article_path, class: "navbar-brand"  %>
+</div>
+
+<h1>The best Articles with <i class="fas fa-heart" style="color:red;"></i></h1>
+<div class="articles-list">
+  <% @articles.each do |article| %>
+    <div class="article-card">
+      <h2><%= link_to article.title, article_path(article), class: "list-article-title" %></h2>
+      <p> <%=article.content%></p>
+    </div>
+  <% end %>
+</div>
+
+

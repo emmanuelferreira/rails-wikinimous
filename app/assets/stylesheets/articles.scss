@@ -1,0 +1,55 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.navbar-lewagon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E9BBB5;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+ .navbar-brand {
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+  font-size: 24px;
+}
+
+.articles-list{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.article-card {
+  background-color: #EEBAB2;
+  opacity: 0.7;
+  border-radius: 8px;
+  padding-left: 20px;
+}
+
+
+.list-article-title {
+  color: white;
+  text-decoration: none;
+}
+
+.list-article-title:hover {
+
+  opacity: 0.6;
+}
